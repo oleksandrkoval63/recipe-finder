@@ -19,7 +19,8 @@ export default async function SingleRecipePage({ params }) {
 
             <div className="text-gray-700 space-y-4">
                <p>
-                  <strong>Coocking time:</strong> {recipe.readyInMinutes} минут
+                  <strong>Coocking time:</strong> {recipe.readyInMinutes}{" "}
+                  minutes
                </p>
                <p>
                   <strong>Servings:</strong> {recipe.servings}

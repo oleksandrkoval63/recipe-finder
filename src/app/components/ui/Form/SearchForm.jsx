@@ -21,7 +21,7 @@ export default function SearchForm() {
          <div className="relative">
             <input
                type="text"
-               placeholder="Например: паста, тако..."
+               placeholder="For example: pasta, tacos..."
                name="query"
                value={query}
                onChange={(e) => setQuery(e.target.value)}
@@ -31,7 +31,7 @@ export default function SearchForm() {
 
          <div>
             <label htmlFor="cuisine" className="block mb-2 font-medium">
-               Выберите кухню:
+               Select cuisine:
             </label>
             <select
                id="cuisine"
@@ -40,18 +40,18 @@ export default function SearchForm() {
                onChange={(e) => setCuisine(e.target.value)}
                className="w-full py-3 px-4 border border-gray-300 rounded-xl shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
             >
-               <option value="">-- Выбрать --</option>
-               <option value="italian">Итальянская</option>
-               <option value="mexican">Мексиканская</option>
-               <option value="chinese">Китайская</option>
-               <option value="french">Французская</option>
-               <option value="japanese">Японская</option>
+               <option value="">-- Select --</option>
+               <option value="italian">Italian</option>
+               <option value="mexican">Mexican</option>
+               <option value="chinese">Chinese</option>
+               <option value="french">French</option>
+               <option value="japanese">Japanese</option>
             </select>
          </div>
 
          <div>
             <label htmlFor="prep-time" className="block mb-2 font-medium">
-               Максимальное время приготовления (в минутах):
+               Maximum cooking time (in minutes):
             </label>
             <input
                type="number"
@@ -60,7 +60,7 @@ export default function SearchForm() {
                value={time ?? ""}
                onChange={(e) => setTime(e.target.value)}
                min={1}
-               placeholder="Например: 30"
+               placeholder="For example: 30"
                className="w-full py-3 px-4 border border-gray-300 rounded-xl shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
             />
          </div>
